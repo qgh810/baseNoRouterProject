@@ -40,7 +40,7 @@ app.use(devMiddleware)
 // compilation error display
 app.use(hotMiddleware)
 
-var staticPath = path.posix.join(config.build.assetsPublicPath, config.build.assetsSubDirectory)
+var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
 module.exports = app.listen(port, function (err) {

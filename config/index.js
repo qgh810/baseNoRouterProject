@@ -7,13 +7,15 @@ module.exports = {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: './static',
     assetsPublicPath: './',
     productionSourceMap: true
   },
   dev: {
     env: require('./dev.env'),
     port: 8080,
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
     proxyTable: {}
   },
 
